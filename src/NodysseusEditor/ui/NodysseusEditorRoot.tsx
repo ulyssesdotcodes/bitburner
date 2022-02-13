@@ -49,33 +49,98 @@ interface IProps {
   vim: boolean;
 }
 
+type Node = Partial<Graph> & {
+  id: string,
+  ref?: string,
+  value?: any,
+  name?: string
+}
+
+type Edge = {
+  from: string,
+  to: string,
+  as?: string,
+  type?: string
+};
+
+type Graph = {
+  id: string,
+  nodes: Node[],
+  edges: Edge[],
+  out?: string
+};
+
 // TODO: try to removve global symbols
 let symbolsLoaded = false;
 let symbols: string[] = [];
-export function SetupTextEditor(): void {
+let nodes: Node[] = [];
+let edges: Edge[] = [];
+export function SetupNodysseusEditor(): void {
   const ns = NetscriptFunctions({} as WorkerScript);
+  console.log(ns);
+  const STRIP_COMMENTS = /(\/\/.*$)|(\/\*[\s\S]*?\*\/)|(\s*=[^,\)]*(('(?:\\'|[^'\r\n])*')|("(?:\\"|[^"\r\n])*"))|(\s*=[^,\)]*))/mg;
+  const ARGUMENT_NAMES = /([^\s,]+)/g;
+  const strip_expand = /{([^}]*)}/mg;
+
+  const exclude = ["heart", "break", "exploit", "bypass", "corporation", "alterReality", "formula", "gang"];
 
   // Populates symbols for text editor
-  function populate(ns: any): string[] {
-    let symbols: string[] = [];
+  function populate(ns: any, path: string): any[] {
+    let new_nodes: any[] = [];
     const keys = Object.keys(ns);
     for (const key of keys) {
+      if(exclude.includes(key)) {
+        continue;
+      }
+      symbols.push(key);
+
       if (typeof ns[key] === "object") {
-        symbols.push(key);
-        symbols = symbols.concat(populate(ns[key]));
+        const node = {id: key}
+        nodes.push(node);
+        const children = populate(ns[key], `${path}.${key}`);
+        children.forEach(c => edges.push({from: c.id, to: key}));
+        new_nodes.push(node);
       }
       if (typeof ns[key] === "function") {
-        symbols.push(key);
+        const fnstr = ns[key].toString();
+        const stripped = fnstr.substring(fnstr.indexOf('(') + 1, fnstr.indexOf(')')).replace(STRIP_COMMENTS, '').replace(strip_expand, '');
+        const args: {name: string, rest: boolean}[] = stripped
+          .match(ARGUMENT_NAMES)
+          ?.map((a: string) => a.startsWith("...") ? {name: a.substring(3), rest: true}  : {name: a, rest: false}) ?? [];
+        const hasrest = args.filter(a => a.rest).length > 0;
+        const node = {
+          name: key,
+          id: `${path}.${key}`,
+          out: "out",
+          nodes: ([
+            {id: "args", ref: "new_array"}, 
+            {id: "ns", ref: "arg", value: "ns"}, 
+            {id: 'rest_filter', script: "return args.concat(rest_args ? Object.entries(rest_args).filter(a => a[0] !== 'ns' && a[0] !== 'fn').map(a => a[1]) : [])"},
+            {id: "fn", value: key},
+            {id: "out", ref: "call"}
+          ] as Node[]).concat(args.map((a: {name: string, rest: boolean}) => ({id: 'arg_' + a.name, ref: "arg", value: a.rest ? "_args" : a.name})))
+          .concat(hasrest ? [] : [{id: 'rest_args', value: []}]),
+          edges: ([
+            {from: "args", to: "rest_filter", as: "args", type: "resolve"},
+            {from: "ns", to: "out", as: "self"},
+            {from: "fn", to: "out", as: "fn"},
+            {from: 'rest_filter', to: 'out', 'as': 'args'},
+          ] as Edge[]).concat(args.map((a: {name: string, rest: boolean}, i: number) => a.rest 
+            ? {from: "arg_" + a.name, to: "rest_filter", as: 'rest_args', type: "resolve"}
+            : {from: 'arg_' + a.name, to: "args", as: 'arg'+i}))
+          .concat(hasrest ? [] : [{from: 'rest_args', to: 'rest_filter', as: 'rest_args'}])
+        };
+        nodes.push(node)
+        new_nodes.push(node);
       }
     }
 
-    return symbols;
+    return new_nodes;
   }
 
-  symbols = populate(ns);
-
-  const exclude = ["heart", "break", "exploit", "bypass", "corporation", "alterReality"];
-  symbols = symbols.filter((symbol: string) => !exclude.includes(symbol)).sort();
+  populate(ns, 'ns').forEach(c => edges.push({from: c.id, to: 'ns'}));
+  nodes.push({id: 'ns'});
+  // symbols = symbols.filter((symbol: [string, string | undefined, string | undefined]) => !exclude.includes(symbol[0])).sort();
 }
 
 // Holds all the data for a open script
@@ -83,13 +148,15 @@ class OpenScript {
   fileName: string;
   code: string;
   hostname: string;
-  graph: any;
+  graph: Graph | undefined;
+  graphstr: string | undefined;
 
-  constructor(fileName: string, code: string, hostname: string, graph: any) {
+  constructor(fileName: string, code: string, hostname: string, graph?: Graph, graphstr?: string) {
     this.fileName = fileName;
     this.code = code;
     this.hostname = hostname;
     this.graph = graph;
+    this.graphstr = graphstr ?? graph ? JSON.stringify(graph) : undefined;
   }
 }
 
@@ -177,25 +244,77 @@ export function Root(props: IProps): React.ReactElement {
   // Nodysseus
   useEffect(() => {
     if(nodysseusEl.current) {
-      console.log(currentScript);
-      const graph = currentScript?.code.match(/(?<=graph = ).*(?=; \/\/end_graph)/g)?.[0];
-      console.log(graph);
-      const cleanup = nodysseus(nodysseusEl.current.id, graph ? JSON.parse(graph) : {
+      const graphstr = currentScript?.code.match(/(?<=graph = ).*(?=; \/\/end_graph)/g)?.[0];
+      const graph: Graph = graphstr ? JSON.parse(graphstr) : undefined;
+      const cleanup = nodysseus(nodysseusEl.current.id, graph ? {
+        ...graph,
+        nodes: graph.nodes.filter(n => !nodes.find(nn => nn.id === n.id)).concat(nodes),
+        edges: graph.edges.filter(e => !nodes.find(nn => nn.id === e.to)).concat(edges)
+      } : {
         in: "main/in", 
         out: "main/out", 
         id: "default_ns",
-        nodes: [{id: "main/in"}, {id: "state", "ref": "state"}, {id: "main/out"}], 
-        edges: [{from: "main/in", to: "main/out", as: "args", "type": "ref"}, {from: "state", "to": "main/out", "as": "state"}]
+        nodes: [{id: "main/in"}, {id: "main/out"}].concat(nodes), 
+        edges: ([{from: "main/in", to: "main/out", as: "args", "type": "ref"}] as Edge[])
+          .concat(edges)
       });
-      nodysseusEl.current.addEventListener("updategraph", ((e: CustomEvent<any>) => {
-        const stringified = JSON.stringify(e.detail.graph);
-        console.log(stringified);
-        if(currentScript && currentScript.graph !== stringified) {
-          currentScript.graph = stringified;
+      nodysseusEl.current.addEventListener("updategraph", ((e: CustomEvent<{graph: Graph}>) => {
+        const used_nodes = new Set<string>();
+        const out_node = e.detail.graph.nodes.find(n => n.id === e.detail.graph.out);
+        if(out_node){
+          const queue: [Node, Node][] = [[e.detail.graph, out_node]];
+          while(queue.length > 0) {
+            const gn = queue.shift();
+            if (gn && !used_nodes.has(gn[1].id)) {
+              used_nodes.add(gn[1].id);
+            } else {
+              continue;
+            }
+
+            const n = gn[1];
+            const g = gn[0];
+
+            if(n.out && n.nodes) {
+              const out_node = n.nodes.find(nn => n?.out === nn.id);
+              if(out_node) {
+                queue.push([n, out_node]);
+              }
+            }
+
+            if(n.ref) {
+              const ref_node = e.detail.graph.nodes.find(nn => nn.id === n?.ref);
+              if(ref_node) {
+                queue.push([e.detail.graph, ref_node])
+              }
+            }
+
+            g.edges?.filter(e => e.to === n.id).forEach(e => {
+              const input = g.nodes?.find(gn => gn.id === e.from);
+              if(input) {
+                queue.push([g, input])
+              }
+            })
+          }
+        }
+
+        const minimized_graph = {
+          ...e.detail.graph,
+          nodes: e.detail.graph.nodes.filter(n => used_nodes.has(n.id)),
+          edges: e.detail.graph.edges.filter(e => used_nodes.has(e.to) && used_nodes.has(e.from))
+        };
+        console.log(minimized_graph)
+        const stringified = JSON.stringify(minimized_graph);
+        if(currentScript && currentScript.graphstr !== stringified) {
+          currentScript.graphstr = stringified;
+          currentScript.graph = minimized_graph;
           currentScript.code = `
-            let graph = ${currentScript.graph}; //end_graph
+            let graph = ${currentScript.graphstr}; //end_graph
             export async function main(ns, runGraph){
-              runGraph(graph, 'main/out', {ns});
+              await Promise.resolve(runGraph(graph, 'main/out', {ns}));
+              // Add in the nodes for RAM calculations.
+              if(false){
+                ${minimized_graph.nodes.filter(n => n.id.startsWith("ns")).map(n => `${n.id}()`)}
+              }
             }
           `
           save();
@@ -314,8 +433,7 @@ export function Root(props: IProps): React.ReactElement {
           const newScript = new OpenScript(
             filename,
             code,
-            props.hostname,
-            {}
+            props.hostname
           );
           openScripts.push(newScript);
           currentScript = { ...newScript };

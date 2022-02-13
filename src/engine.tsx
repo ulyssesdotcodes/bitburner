@@ -16,6 +16,7 @@ import { staneksGift } from "./CotMG/Helper";
 import { processPassiveFactionRepGain, inviteToFaction } from "./Faction/FactionHelpers";
 import { Router } from "./ui/GameRoot";
 import { SetupTextEditor } from "./ScriptEditor/ui/ScriptEditorRoot";
+import { SetupNodysseusEditor } from "./NodysseusEditor/ui/NodysseusEditorRoot";
 
 import {
   getHackingWorkRepGain,
@@ -424,6 +425,7 @@ const Engine: {
       iTutorialStart();
     }
     SetupTextEditor();
+    SetupNodysseusEditor();
   },
 
   start: function () {

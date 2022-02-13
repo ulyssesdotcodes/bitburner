@@ -355,7 +355,7 @@ function parseOnlyCalculateDeps(code: string, currentModule: string): any {
       MemberExpression: (node: any, st: any, walkDeeper: any) => {
         node.object && walkDeeper(node.object, st);
         node.property && walkDeeper(node.property, st);
-      },
+      }
     };
   }
 
