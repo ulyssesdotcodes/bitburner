@@ -58,6 +58,7 @@ import { lscpu } from "./commands/lscpu";
 import { mem } from "./commands/mem";
 import { mv } from "./commands/mv";
 import { nano } from "./commands/nano";
+import { nod } from "./commands/nod";
 import { ps } from "./commands/ps";
 import { rm } from "./commands/rm";
 import { run } from "./commands/run";
@@ -799,6 +800,7 @@ export class Terminal implements ITerminal {
       mem: mem,
       mv: mv,
       nano: nano,
+      nod: nod,
       ps: ps,
       rm: rm,
       run: run,

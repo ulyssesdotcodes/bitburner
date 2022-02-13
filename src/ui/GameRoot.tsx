@@ -51,6 +51,7 @@ import { GenericLocation } from "../Locations/ui/GenericLocation";
 import { LocationCity } from "../Locations/ui/City";
 import { ProgramsRoot } from "../Programs/ui/ProgramsRoot";
 import { Root as ScriptEditorRoot } from "../ScriptEditor/ui/ScriptEditorRoot";
+import { Root as NodysseusEditorRoot } from "../NodysseusEditor/ui/NodysseusEditorRoot";
 import { MilestonesRoot } from "../Milestones/ui/MilestonesRoot";
 import { TerminalRoot } from "../Terminal/ui/TerminalRoot";
 import { TutorialRoot } from "../Tutorial/ui/TutorialRoot";
@@ -174,6 +175,9 @@ export let Router: IRouter = {
   toScriptEditor: () => {
     throw new Error("Router called before initialization");
   },
+  toNodysseusEditor: () => {
+    throw new Error("Router called before initialization");
+  },
   toSleeves: () => {
     throw new Error("Router called before initialization");
   },
@@ -290,7 +294,14 @@ export function GameRoot({ player, engine, terminal }: IProps): React.ReactEleme
         files,
         vim: !!options?.vim,
       });
-      setPage(Page.ScriptEditor);
+      setPage(options?.nodysseus ? Page.NodysseusEditor : Page.ScriptEditor );
+    },
+    toNodysseusEditor: (files: Record<string, string>, options?: ScriptEditorRouteOptions) => {
+      setEditorOptions({
+        files,
+        vim: !!options?.vim,
+      });
+      setPage(options?.nodysseus ? Page.NodysseusEditor : Page.ScriptEditor );
     },
     toSleeves: () => setPage(Page.Sleeves),
     toStockMarket: () => setPage(Page.StockMarket),
@@ -427,6 +438,18 @@ export function GameRoot({ player, engine, terminal }: IProps): React.ReactEleme
     case Page.ScriptEditor: {
       mainPage = (
         <ScriptEditorRoot
+          files={files}
+          hostname={player.getCurrentServer().hostname}
+          player={player}
+          router={Router}
+          vim={vim}
+        />
+      );
+      break;
+    }
+    case Page.NodysseusEditor: {
+      mainPage = (
+        <NodysseusEditorRoot
           files={files}
           hostname={player.getCurrentServer().hostname}
           player={player}

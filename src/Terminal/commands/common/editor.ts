@@ -145,6 +145,9 @@ export function commonEditor(
       throw new Error(`Could not find any valid files to open with ${command} using glob: \`${globSearch.glob}\``)
     }
 
+    if(scriptEditorRouteOptions?.nodysseus) {
+      router.toNodysseusEditor(Object.fromEntries(files), scriptEditorRouteOptions);
+    }
     router.toScriptEditor(Object.fromEntries(files), scriptEditorRouteOptions);
   } catch (e) {
     terminal.error(`${e}`);

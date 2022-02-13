@@ -14,6 +14,7 @@ export enum Page {
   Corporation,
   CreateProgram,
   ScriptEditor,
+  NodysseusEditor,
   DevMenu,
   Faction,
   Factions,
@@ -43,6 +44,7 @@ export enum Page {
 
 export interface ScriptEditorRouteOptions {
   vim: boolean;
+  nodysseus: boolean;
 }
 
 /**
@@ -75,6 +77,7 @@ export interface IRouter {
   toMilestones(): void;
   toResleeves(): void;
   toScriptEditor(files?: Record<string, string>, options?: ScriptEditorRouteOptions): void;
+  toNodysseusEditor(files?: Record<string, string>, options?: ScriptEditorRouteOptions): void;
   toSleeves(): void;
   toStockMarket(): void;
   toTerminal(): void;

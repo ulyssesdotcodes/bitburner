@@ -11,6 +11,7 @@ import { WorkerScript } from "./Netscript/WorkerScript";
 import { Script } from "./Script/Script";
 import { areImportsEquals } from "./Terminal/DirectoryHelpers";
 import { IPlayer } from "./PersonObjects/IPlayer";
+import { runGraph } from "nodysseus";
 
 // Makes a blob that contains the code of a given script.
 function makeScriptBlob(code: string): Blob {
@@ -65,6 +66,7 @@ export async function executeJSScript(
   await compile(player, script, scripts);
   workerScript.ramUsage = script.ramUsage;
   const loadedModule = await script.module;
+  console.log(loadedModule);
 
   const ns = workerScript.env.vars;
 
@@ -76,7 +78,7 @@ export async function executeJSScript(
       `${script.filename} cannot be run because it does not have a main function.`,
     );
   }
-  return loadedModule.main(ns);
+  return loadedModule.main(ns, runGraph);
 }
 
 function isDependencyOutOfDate(filename: string, scripts: Script[], scriptModuleSequenceNumber: number): boolean {

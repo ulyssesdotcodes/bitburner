@@ -12,5 +12,5 @@ export function vim(
   server: BaseServer,
   args: (string | number | boolean)[],
 ): void {
-  return commonEditor('vim', {terminal, router, player, server, args}, {vim: true});
+  return commonEditor('vim', {terminal, router, player, server, args}, {vim: true, nodysseus: false});
 }

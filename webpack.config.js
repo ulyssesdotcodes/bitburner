@@ -28,8 +28,10 @@ module.exports = (env, argv) => {
   const devServerSettings = {
     hot: true,
     port: 8000,
-    publicPath: `/`,
-    stats: statsConfig,
+    devMiddleware: {
+      stats: statsConfig,
+      publicPath: `/`,
+    }
   };
 
   // By default, the webpack-dev-server is not exposed outside of localhost.
@@ -147,7 +149,11 @@ module.exports = (env, argv) => {
           use: {
             loader: "babel-loader",
             options: {
-              plugins: [isFastRefresh && require.resolve("react-refresh/babel")].filter(Boolean),
+              plugins: [
+                isFastRefresh && require.resolve("react-refresh/babel"), 
+              ].filter(Boolean).concat([
+                '@babel/plugin-proposal-optional-chaining'
+              ]),
               cacheDirectory: true,
             },
           },
@@ -171,13 +177,12 @@ module.exports = (env, argv) => {
       removeEmptyChunks: true,
       mergeDuplicateChunks: true,
       flagIncludedChunks: true,
-      occurrenceOrder: true,
       sideEffects: true,
       providedExports: true,
       usedExports: true,
       concatenateModules: false,
-      namedModules: false,
-      namedChunks: false,
+      moduleIds: 'named',
+      chunkIds: 'named',
       minimize: !isDevelopment,
       portableRecords: true,
       splitChunks: {
