@@ -834,7 +834,7 @@ export function Root(props: IProps): React.ReactElement {
           sx={{ p: 1 }}
           alignItems="center"
           id="nodysseus-editor"
-          style={{height: '100vh', width: '100%'}}
+          style={{height: '100vh', width: '100%', color: "white"}}
           ref={nodysseusEl}
         ></Box>
 
