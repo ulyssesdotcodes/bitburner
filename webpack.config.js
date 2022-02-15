@@ -138,8 +138,8 @@ module.exports = (env, argv) => {
     // },
     entry: entry,
     output: {
-      path: path.resolve(__dirname, "dist"),
-      filename: "[name].bundle.js",
+      path: path.resolve(__dirname, "./"),
+      filename: "dist/[name].bundle.js",
     },
     module: {
       rules: [
@@ -149,12 +149,8 @@ module.exports = (env, argv) => {
           use: {
             loader: "babel-loader",
             options: {
-              plugins: [
-                isFastRefresh && require.resolve("react-refresh/babel"), 
-              ].filter(Boolean).concat([
-                '@babel/plugin-proposal-optional-chaining'
-              ]),
-              cacheDirectory: true
+              plugins: [isFastRefresh && require.resolve("react-refresh/babel")].filter(Boolean),
+              cacheDirectory: true,
             },
           },
         },
@@ -167,7 +163,7 @@ module.exports = (env, argv) => {
           loader: "file-loader",
           options: {
             name: "[contenthash].[ext]",
-            outputPath: "images",
+            outputPath: "dist/images",
           },
         },
       ],
