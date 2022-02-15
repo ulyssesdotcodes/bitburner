@@ -139,7 +139,7 @@ module.exports = (env, argv) => {
     entry: entry,
     output: {
       path: path.resolve(__dirname, "./"),
-      filename: "[name].bundle.js",
+      filename: "dist/[name].bundle.js",
     },
     module: {
       rules: [
@@ -154,7 +154,7 @@ module.exports = (env, argv) => {
               ].filter(Boolean).concat([
                 '@babel/plugin-proposal-optional-chaining'
               ]),
-              cacheDirectory: true,
+              cacheDirectory: true
             },
           },
         },
