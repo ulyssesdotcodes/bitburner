@@ -66,7 +66,6 @@ export async function executeJSScript(
   await compile(player, script, scripts);
   workerScript.ramUsage = script.ramUsage;
   const loadedModule = await script.module;
-  console.log(loadedModule);
 
   const ns = workerScript.env.vars;
 
