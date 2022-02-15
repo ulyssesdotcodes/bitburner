@@ -86,7 +86,7 @@ export function SetupNodysseusEditor(): void {
 
   // Populates symbols for text editor
   function populate(ns: any, path: string): any[] {
-    let new_nodes: any[] = [];
+    const new_nodes: any[] = [];
     const keys = Object.keys(ns);
     for (const key of keys) {
       if(exclude.includes(key)) {
@@ -118,7 +118,7 @@ export function SetupNodysseusEditor(): void {
             {id: 'rest_filter', script: "return args.concat(rest_args ? Object.entries(rest_args).filter(a => a[0] !== 'ns' && a[0] !== 'fn').map(a => a[1]) : [])"},
             {id: "fn", value: key},
             {id: "out", ref: "call"}
-          ] as Node[]).concat(args.map((a: {name: string, rest: boolean}) => ({id: 'arg_' + a.name, ref: "arg", value: a.rest ? "_args" : a.name})))
+          ] as Node[]).concat(args.map((a: {name: string; rest: boolean}) => ({id: 'arg_' + a.name, ref: "arg", value: a.rest ? "_args" : a.name})))
           .concat(hasrest ? [] : [{id: 'rest_args', value: []}]),
           edges: ([
             {from: "args", to: "rest_filter", as: "args", type: "resolve"},
