@@ -77,7 +77,6 @@ const nodes: Node[] = [];
 const edges: Edge[] = [];
 export function SetupNodysseusEditor(): void {
   const ns = NetscriptFunctions({} as WorkerScript);
-  console.log(ns);
   const STRIP_COMMENTS = /(\/\/.*$)|(\/\*[\s\S]*?\*\/)|(\s*=[^,\)]*(('(?:\\'|[^'\r\n])*')|("(?:\\"|[^"\r\n])*"))|(\s*=[^,\)]*))/mg;
   const ARGUMENT_NAMES = /([^\s,]+)/g;
   const strip_expand = /{([^}]*)}/mg;
@@ -302,7 +301,6 @@ export function Root(props: IProps): React.ReactElement {
           nodes: e.detail.graph.nodes.filter(n => used_nodes.has(n.id)),
           edges: e.detail.graph.edges.filter(e => used_nodes.has(e.to) && used_nodes.has(e.from))
         };
-        console.log(minimized_graph)
         const stringified = JSON.stringify(minimized_graph);
         if(currentScript && currentScript.graphstr !== stringified) {
           currentScript.graphstr = stringified;
