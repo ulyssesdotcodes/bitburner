@@ -50,31 +50,31 @@ interface IProps {
 }
 
 type Node = Partial<Graph> & {
-  id: string,
-  ref?: string,
-  value?: any,
-  name?: string
+  id: string;
+  ref?: string;
+  value?: any;
+  name?: string;
 }
 
 type Edge = {
-  from: string,
-  to: string,
-  as?: string,
-  type?: string
+  from: string;
+  to: string;
+  as?: string;
+  type?: string;
 };
 
 type Graph = {
-  id: string,
-  nodes: Node[],
-  edges: Edge[],
-  out?: string
+  id: string;
+  nodes: Node[];
+  edges: Edge[];
+  out?: string;
 };
 
 // TODO: try to removve global symbols
 let symbolsLoaded = false;
-let symbols: string[] = [];
-let nodes: Node[] = [];
-let edges: Edge[] = [];
+const symbols: string[] = [];
+const nodes: Node[] = [];
+const edges: Edge[] = [];
 export function SetupNodysseusEditor(): void {
   const ns = NetscriptFunctions({} as WorkerScript);
   console.log(ns);
@@ -104,9 +104,9 @@ export function SetupNodysseusEditor(): void {
       if (typeof ns[key] === "function") {
         const fnstr = ns[key].toString();
         const stripped = fnstr.substring(fnstr.indexOf('(') + 1, fnstr.indexOf(')')).replace(STRIP_COMMENTS, '').replace(strip_expand, '');
-        const args: {name: string, rest: boolean}[] = stripped
+        const args: {name: string; rest: boolean}[] = stripped
           .match(ARGUMENT_NAMES)
-          ?.map((a: string) => a.startsWith("...") ? {name: a.substring(3), rest: true}  : {name: a, rest: false}) ?? [];
+          ?.map((a: string) => (a.startsWith("...") ? {name: a.substring(3), rest: true}  : {name: a, rest: false}) ?? []);
         const hasrest = args.filter(a => a.rest).length > 0;
         const node = {
           name: key,
@@ -125,9 +125,9 @@ export function SetupNodysseusEditor(): void {
             {from: "ns", to: "out", as: "self"},
             {from: "fn", to: "out", as: "fn"},
             {from: 'rest_filter', to: 'out', 'as': 'args'},
-          ] as Edge[]).concat(args.map((a: {name: string, rest: boolean}, i: number) => a.rest 
+          ] as Edge[]).concat(args.map((a: {name: string; rest: boolean}, i: number) => (a.rest 
             ? {from: "arg_" + a.name, to: "rest_filter", as: 'rest_args', type: "resolve"}
-            : {from: 'arg_' + a.name, to: "args", as: 'arg'+i}))
+            : {from: 'arg_' + a.name, to: "args", as: 'arg'+i})))
           .concat(hasrest ? [] : [{from: 'rest_args', to: 'rest_filter', as: 'rest_args'}])
         };
         nodes.push(node)
