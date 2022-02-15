@@ -252,11 +252,10 @@ export function Root(props: IProps): React.ReactElement {
         nodes: graph.nodes.filter(n => !nodes.find(nn => nn.id === n.id)).concat(nodes),
         edges: graph.edges.filter(e => !nodes.find(nn => nn.id === e.to)).concat(edges)
       } : {
-        in: "main/in", 
         out: "main/out", 
         id: "default_ns",
-        nodes: [{id: "main/in"}, {id: "main/out"}].concat(nodes), 
-        edges: ([{from: "main/in", to: "main/out", as: "args", "type": "ref"}] as Edge[])
+        nodes: [{id: "ns", ref: "arg", "value": "ns"}, {id: "main/out"}].concat(nodes), 
+        edges: ([{from: "ns", to: "main/out", as: "ns"}] as Edge[])
           .concat(edges)
       });
       nodysseusEl.current.addEventListener("updategraph", ((e: CustomEvent<{graph: Graph}>) => {
