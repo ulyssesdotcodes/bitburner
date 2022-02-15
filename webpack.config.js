@@ -138,8 +138,8 @@ module.exports = (env, argv) => {
     // },
     entry: entry,
     output: {
-      path: path.resolve(__dirname, "./"),
-      filename: "dist/[name].bundle.js",
+      path: path.resolve(__dirname, "dist"),
+      filename: "[name].bundle.js",
     },
     module: {
       rules: [
@@ -167,7 +167,7 @@ module.exports = (env, argv) => {
           loader: "file-loader",
           options: {
             name: "[contenthash].[ext]",
-            outputPath: "dist/images",
+            outputPath: "images",
           },
         },
       ],

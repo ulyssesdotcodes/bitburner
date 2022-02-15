@@ -106,7 +106,8 @@ export function SetupNodysseusEditor(): void {
         const stripped = fnstr.substring(fnstr.indexOf('(') + 1, fnstr.indexOf(')')).replace(STRIP_COMMENTS, '').replace(strip_expand, '');
         const args: {name: string; rest: boolean}[] = stripped
           .match(ARGUMENT_NAMES)
-          ?.map((a: string) => (a.startsWith("...") ? {name: a.substring(3), rest: true}  : {name: a, rest: false}) ?? []);
+          ?.map((a: string) => (a.startsWith("...") ? {name: a.substring(3), rest: true}  : {name: a, rest: false}) ?? [])
+          ?? [];
         const hasrest = args.filter(a => a.rest).length > 0;
         const node = {
           name: key,
