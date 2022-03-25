@@ -38,7 +38,7 @@ import { Modal } from "../../ui/React/Modal";
 import libSource from "!!raw-loader!../NetscriptDefinitions.d.ts";
 import { Tooltip } from "@mui/material";
 
-import {nodysseus} from "nodysseus";
+import * as nodysseus from "nodysseus";
 
 interface IProps {
   // Map of filename -> code
@@ -246,7 +246,7 @@ export function Root(props: IProps): React.ReactElement {
     if(nodysseusEl.current) {
       const graphstr = currentScript?.code.match(/(?<=graph = ).*(?=; \/\/end_graph)/g)?.[0];
       const graph: Graph = graphstr ? JSON.parse(graphstr) : undefined;
-      const cleanup = nodysseus(nodysseusEl.current.id, graph ? {
+      const cleanup = nodysseus.editor(nodysseusEl.current.id, graph ? {
         ...graph,
         nodes: graph.nodes.filter(n => !nodes.find(nn => nn.id === n.id)).concat(nodes),
         edges: graph.edges.filter(e => !nodes.find(nn => nn.id === e.to)).concat(edges)
