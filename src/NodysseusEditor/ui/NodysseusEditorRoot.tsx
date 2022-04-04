@@ -36,6 +36,7 @@ import { PromptEvent } from "../../ui/React/PromptManager";
 import { Modal } from "../../ui/React/Modal";
 
 import libSource from "!!raw-loader!../NetscriptDefinitions.d.ts";
+import nsgraph from "./nodes.json"
 import { Tooltip } from "@mui/material";
 
 import * as nodysseus from "nodysseus";
@@ -73,10 +74,9 @@ type Graph = {
 // TODO: try to removve global symbols
 let symbolsLoaded = false;
 const symbols: string[] = [];
-const nodes: Node[] = [];
-const edges: Edge[] = [];
+// const nodes: Node[] = [];
+// const edges: Edge[] = [];
 export function SetupNodysseusEditor(): void {
-  const ns = NetscriptFunctions({} as WorkerScript);
   const STRIP_COMMENTS = /(\/\/.*$)|(\/\*[\s\S]*?\*\/)|(\s*=[^,\)]*(('(?:\\'|[^'\r\n])*')|("(?:\\"|[^"\r\n])*"))|(\s*=[^,\)]*))/mg;
   const ARGUMENT_NAMES = /([^\s,]+)/g;
   const strip_expand = /{([^}]*)}/mg;
@@ -84,62 +84,62 @@ export function SetupNodysseusEditor(): void {
   const exclude = ["heart", "break", "exploit", "bypass", "corporation", "alterReality", "formula", "gang"];
 
   // Populates symbols for text editor
-  function populate(ns: any, path: string): any[] {
-    const new_nodes: any[] = [];
-    const keys = Object.keys(ns);
-    for (const key of keys) {
-      if(exclude.includes(key)) {
-        continue;
-      }
-      symbols.push(key);
+  // function populate(ns: any, path: string): any[] {
+  //   const new_nodes: any[] = [];
+  //   const keys = Object.keys(ns);
+  //   for (const key of keys) {
+  //     if(exclude.includes(key)) {
+  //       continue;
+  //     }
+  //     symbols.push(key);
 
-      if (typeof ns[key] === "object") {
-        const node = {id: key}
-        nodes.push(node);
-        const children = populate(ns[key], `${path}.${key}`);
-        children.forEach(c => edges.push({from: c.id, to: key}));
-        new_nodes.push(node);
-      }
-      if (typeof ns[key] === "function") {
-        const fnstr = ns[key].toString();
-        const stripped = fnstr.substring(fnstr.indexOf('(') + 1, fnstr.indexOf(')')).replace(STRIP_COMMENTS, '').replace(strip_expand, '');
-        const args: {name: string; rest: boolean}[] = stripped
-          .match(ARGUMENT_NAMES)
-          ?.map((a: string) => (a.startsWith("...") ? {name: a.substring(3), rest: true}  : {name: a, rest: false}) ?? [])
-          ?? [];
-        const hasrest = args.filter(a => a.rest).length > 0;
-        const node = {
-          name: key,
-          id: `${path}.${key}`,
-          out: "out",
-          nodes: ([
-            {id: "args", ref: "new_array"}, 
-            {id: "ns", ref: "arg", value: "ns"}, 
-            {id: 'rest_filter', script: "return args.concat(rest_args ? Object.entries(rest_args).filter(a => a[0] !== 'ns' && a[0] !== 'fn').map(a => a[1]) : [])"},
-            {id: "fn", value: key},
-            {id: "out", ref: "call"}
-          ] as Node[]).concat(args.map((a: {name: string; rest: boolean}) => ({id: 'arg_' + a.name, ref: "arg", value: a.rest ? "_args" : a.name})))
-          .concat(hasrest ? [] : [{id: 'rest_args', value: []}]),
-          edges: ([
-            {from: "args", to: "rest_filter", as: "args", type: "resolve"},
-            {from: "ns", to: "out", as: "self"},
-            {from: "fn", to: "out", as: "fn"},
-            {from: 'rest_filter', to: 'out', 'as': 'args'},
-          ] as Edge[]).concat(args.map((a: {name: string; rest: boolean}, i: number) => (a.rest 
-            ? {from: "arg_" + a.name, to: "rest_filter", as: 'rest_args', type: "resolve"}
-            : {from: 'arg_' + a.name, to: "args", as: 'arg'+i})))
-          .concat(hasrest ? [] : [{from: 'rest_args', to: 'rest_filter', as: 'rest_args'}])
-        };
-        nodes.push(node)
-        new_nodes.push(node);
-      }
-    }
+      // if (typeof ns[key] === "object") {
+      //   const node = {id: key}
+      //   nodes.push(node);
+      //   const children = populate(ns[key], `${path}.${key}`);
+      //   children.forEach(c => edges.push({from: c.id, to: key}));
+      //   new_nodes.push(node);
+      // }
+      // if (typeof ns[key] === "function") {
+      //   const fnstr = ns[key].toString();
+      //   const stripped = fnstr.substring(fnstr.indexOf('(') + 1, fnstr.indexOf(')')).replace(STRIP_COMMENTS, '').replace(strip_expand, '');
+      //   const args: {name: string; rest: boolean}[] = stripped
+      //     .match(ARGUMENT_NAMES)
+      //     ?.map((a: string) => (a.startsWith("...") ? {name: a.substring(3), rest: true}  : {name: a, rest: false}) ?? [])
+      //     ?? [];
+      //   const hasrest = args.filter(a => a.rest).length > 0;
+      //   const node = {
+      //     name: key,
+      //     id: `${path}.${key}`,
+      //     out: "out",
+      //     nodes: ([
+      //       {id: "args", ref: "new_array"}, 
+      //       {id: "ns", ref: "arg", value: "ns"}, 
+      //       {id: 'rest_filter', script: "return args.concat(rest_args ? Object.entries(rest_args).filter(a => a[0] !== 'ns' && a[0] !== 'fn').map(a => a[1]) : [])"},
+      //       {id: "fn", value: key},
+      //       {id: "out", ref: "call"}
+      //     ] as Node[]).concat(args.map((a: {name: string; rest: boolean}) => ({id: 'arg_' + a.name, ref: "arg", value: a.rest ? "_args" : a.name})))
+      //     .concat(hasrest ? [] : [{id: 'rest_args', value: []}]),
+      //     edges: ([
+      //       {from: "args", to: "rest_filter", as: "args", type: "resolve"},
+      //       {from: "ns", to: "out", as: "self"},
+      //       {from: "fn", to: "out", as: "fn"},
+      //       {from: 'rest_filter', to: 'out', 'as': 'args'},
+      //     ] as Edge[]).concat(args.map((a: {name: string; rest: boolean}, i: number) => (a.rest 
+      //       ? {from: "arg_" + a.name, to: "rest_filter", as: 'rest_args', type: "resolve"}
+      //       : {from: 'arg_' + a.name, to: "args", as: 'arg'+i})))
+      //     .concat(hasrest ? [] : [{from: 'rest_args', to: 'rest_filter', as: 'rest_args'}])
+      //   };
+      //   nodes.push(node)
+      //   new_nodes.push(node);
+      // }
+    // }
 
-    return new_nodes;
-  }
+    // return new_nodes;
+  // }
 
-  populate(ns, 'ns').forEach(c => edges.push({from: c.id, to: 'ns'}));
-  nodes.push({id: 'ns'});
+  // populate(ns, 'ns').forEach(c => edges.push({from: c.id, to: 'ns'}));
+  // nodes.push({id: 'ns'});
   // symbols = symbols.filter((symbol: [string, string | undefined, string | undefined]) => !exclude.includes(symbol[0])).sort();
 }
 
@@ -166,6 +166,7 @@ let currentScript: OpenScript | null = null;
 // Called every time script editor is opened
 export function Root(props: IProps): React.ReactElement {
 
+  const ns = NetscriptFunctions({} as WorkerScript);
   const nodysseusEl = useRef<HTMLElement>(null);
 
 
@@ -248,15 +249,19 @@ export function Root(props: IProps): React.ReactElement {
       const graph: Graph = graphstr ? JSON.parse(graphstr) : undefined;
       const cleanup = nodysseus.editor(nodysseusEl.current.id, graph ? {
         ...graph,
-        nodes: graph.nodes.filter(n => !nodes.find(nn => nn.id === n.id)).concat(nodes),
-        edges: graph.edges.filter(e => !nodes.find(nn => nn.id === e.to)).concat(edges)
+        nodes: graph.nodes.filter(n => !nsgraph.nodes.find(nn => 'ns.' + nn.id === n.id))
+          .concat(nsgraph.nodes.map(n => ({...n, id: 'ns.' + n.id})))
       } : {
         out: "main/out", 
         id: "default_ns",
-        nodes: ([{id: "arg_ns", name: "ns", ref: "arg", "value": "ns"}, {id: "main/out"}] as Node[]).concat(nodes), 
-        edges: ([{from: "arg_ns", to: "main/out", as: "ns"}] as Edge[])
-          .concat(edges)
-      });
+        nodes: ([
+          {"id": "hello", "value": "Hello Bitburner + Nodysseus!"},
+          {id: "main/out", ref: "ns.tprint"}
+        ] as Node[]).concat(nsgraph.nodes.map(n => ({...n ,id: 'ns.' + n.id}))), 
+        edges: ([
+          {from: "hello", "to": "main/out", "as": "args"}
+        ] as Edge[])
+      }, {}, true);
       nodysseusEl.current.addEventListener("updategraph", ((e: CustomEvent<{graph: Graph}>) => {
         const used_nodes = new Set<string>();
         const out_node = e.detail.graph.nodes.find(n => n.id === e.detail.graph.out);

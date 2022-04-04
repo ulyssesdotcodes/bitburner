@@ -1,0 +1,8654 @@
+{
+  "nodes": [
+    {
+      "id": "universityCourse",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "universityName",
+          "ref": "arg",
+          "value": "universityName",
+          "type": "string"
+        },
+        {
+          "id": "courseName",
+          "ref": "arg",
+          "value": "courseName",
+          "type": "string"
+        },
+        {
+          "id": "focus",
+          "ref": "arg",
+          "value": "focus",
+          "type": "boolean"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "universityCourse"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "universityName",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "courseName",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "focus",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "gymWorkout",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "gymName",
+          "ref": "arg",
+          "value": "gymName",
+          "type": "string"
+        },
+        {
+          "id": "stat",
+          "ref": "arg",
+          "value": "stat",
+          "type": "string"
+        },
+        {
+          "id": "focus",
+          "ref": "arg",
+          "value": "focus",
+          "type": "boolean"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "gymWorkout"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "gymName",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "stat",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "focus",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "travelToCity",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "city",
+          "ref": "arg",
+          "value": "city",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "travelToCity"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "city",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "purchaseTor",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "purchaseTor"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "purchaseProgram",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "programName",
+          "ref": "arg",
+          "value": "programName",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "purchaseProgram"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "programName",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "isBusy",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "isBusy"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "stopAction",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "stopAction"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "upgradeHomeRam",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "upgradeHomeRam"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "upgradeHomeCores",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "upgradeHomeCores"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getUpgradeHomeRamCost",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getUpgradeHomeRamCost"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getUpgradeHomeCoresCost",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getUpgradeHomeCoresCost"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "workForCompany",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "companyName",
+          "ref": "arg",
+          "value": "companyName",
+          "type": "string"
+        },
+        {
+          "id": "focus",
+          "ref": "arg",
+          "value": "focus",
+          "type": "boolean"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "workForCompany"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "companyName",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "focus",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "applyToCompany",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "companyName",
+          "ref": "arg",
+          "value": "companyName",
+          "type": "string"
+        },
+        {
+          "id": "field",
+          "ref": "arg",
+          "value": "field",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "applyToCompany"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "companyName",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "field",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "getCompanyRep",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "companyName",
+          "ref": "arg",
+          "value": "companyName",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getCompanyRep"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "companyName",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getCompanyFavor",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "companyName",
+          "ref": "arg",
+          "value": "companyName",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getCompanyFavor"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "companyName",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getCompanyFavorGain",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "companyName",
+          "ref": "arg",
+          "value": "companyName",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getCompanyFavorGain"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "companyName",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "checkFactionInvitations",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "checkFactionInvitations"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "joinFaction",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "faction",
+          "ref": "arg",
+          "value": "faction",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "joinFaction"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "faction",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "workForFaction",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "faction",
+          "ref": "arg",
+          "value": "faction",
+          "type": "string"
+        },
+        {
+          "id": "workType",
+          "ref": "arg",
+          "value": "workType",
+          "type": "string"
+        },
+        {
+          "id": "focus",
+          "ref": "arg",
+          "value": "focus",
+          "type": "boolean"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "workForFaction"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "faction",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "workType",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "focus",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "getFactionRep",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "faction",
+          "ref": "arg",
+          "value": "faction",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getFactionRep"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "faction",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getFactionFavor",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "faction",
+          "ref": "arg",
+          "value": "faction",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getFactionFavor"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "faction",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getFactionFavorGain",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "faction",
+          "ref": "arg",
+          "value": "faction",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getFactionFavorGain"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "faction",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "donateToFaction",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "faction",
+          "ref": "arg",
+          "value": "faction",
+          "type": "string"
+        },
+        {
+          "id": "amount",
+          "ref": "arg",
+          "value": "amount",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "donateToFaction"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "faction",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "amount",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "createProgram",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "program",
+          "ref": "arg",
+          "value": "program",
+          "type": "string"
+        },
+        {
+          "id": "focus",
+          "ref": "arg",
+          "value": "focus",
+          "type": "boolean"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "createProgram"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "program",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "focus",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "commitCrime",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "crime",
+          "ref": "arg",
+          "value": "crime",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "commitCrime"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "crime",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getCrimeChance",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "crime",
+          "ref": "arg",
+          "value": "crime",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getCrimeChance"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "crime",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getCrimeStats",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "crime",
+          "ref": "arg",
+          "value": "crime",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getCrimeStats"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "crime",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getOwnedAugmentations",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "purchased",
+          "ref": "arg",
+          "value": "purchased",
+          "type": "boolean"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getOwnedAugmentations"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "purchased",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getAugmentationsFromFaction",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "faction",
+          "ref": "arg",
+          "value": "faction",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getAugmentationsFromFaction"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "faction",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getAugmentationPrereq",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "augName",
+          "ref": "arg",
+          "value": "augName",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getAugmentationPrereq"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "augName",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getAugmentationCost",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "augName",
+          "ref": "arg",
+          "value": "augName",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getAugmentationCost"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "augName",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getAugmentationPrice",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "augName",
+          "ref": "arg",
+          "value": "augName",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getAugmentationPrice"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "augName",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getAugmentationRepReq",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "augName",
+          "ref": "arg",
+          "value": "augName",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getAugmentationRepReq"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "augName",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "purchaseAugmentation",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "faction",
+          "ref": "arg",
+          "value": "faction",
+          "type": "string"
+        },
+        {
+          "id": "augmentation",
+          "ref": "arg",
+          "value": "augmentation",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "purchaseAugmentation"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "faction",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "augmentation",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "getAugmentationStats",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "name",
+          "ref": "arg",
+          "value": "name",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getAugmentationStats"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "name",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "installAugmentations",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "cbScript",
+          "ref": "arg",
+          "value": "cbScript",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "installAugmentations"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "cbScript",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getStats",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getStats"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getCharacterInformation",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getCharacterInformation"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "hospitalize",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "hospitalize"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "softReset",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "cbScript",
+          "ref": "arg",
+          "value": "cbScript",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "softReset"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "cbScript",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "goToLocation",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "locationName",
+          "ref": "arg",
+          "value": "locationName",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "goToLocation"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "locationName",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getCurrentServer",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getCurrentServer"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "connect",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "hostname",
+          "ref": "arg",
+          "value": "hostname",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "connect"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "hostname",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "manualHack",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "manualHack"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "installBackdoor",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "installBackdoor"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "isFocused",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "isFocused"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "setFocus",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "focus",
+          "ref": "arg",
+          "value": "focus",
+          "type": "boolean"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "setFocus"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "focus",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "hacknet",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "hacknet"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "bladeburner",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "bladeburner"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "codingcontract",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "codingcontract"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "gang",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "gang"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "sleeve",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "sleeve"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "stock",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "stock"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "formulas",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "formulas"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "stanek",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "stanek"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "corporation",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "corporation"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "ui",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "ui"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "args",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "property",
+          "value": "args"
+        },
+        {
+          "id": "out",
+          "ref": "get"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "target"
+        },
+        {
+          "from": "property",
+          "to": "out",
+          "as": "path"
+        }
+      ]
+    },
+    {
+      "id": "hack",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "opts",
+          "ref": "arg",
+          "value": "opts",
+          "type": "BasicHGWOptions"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "hack"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "opts",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "grow",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "opts",
+          "ref": "arg",
+          "value": "opts",
+          "type": "BasicHGWOptions"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "grow"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "opts",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "weaken",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "opts",
+          "ref": "arg",
+          "value": "opts",
+          "type": "BasicHGWOptions"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "weaken"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "opts",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "weakenAnalyze",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "threads",
+          "ref": "arg",
+          "value": "threads",
+          "type": "number"
+        },
+        {
+          "id": "cores",
+          "ref": "arg",
+          "value": "cores",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "weakenAnalyze"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "threads",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "cores",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "hackAnalyzeThreads",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "hackAmount",
+          "ref": "arg",
+          "value": "hackAmount",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "hackAnalyzeThreads"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "hackAmount",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "hackAnalyze",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "hackAnalyze"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "hackAnalyzeSecurity",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "threads",
+          "ref": "arg",
+          "value": "threads",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "hackAnalyzeSecurity"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "threads",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "hackAnalyzeChance",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "hackAnalyzeChance"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "growthAnalyze",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "growthAmount",
+          "ref": "arg",
+          "value": "growthAmount",
+          "type": "number"
+        },
+        {
+          "id": "cores",
+          "ref": "arg",
+          "value": "cores",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "growthAnalyze"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "growthAmount",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "cores",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "growthAnalyzeSecurity",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "threads",
+          "ref": "arg",
+          "value": "threads",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "growthAnalyzeSecurity"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "threads",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "millis",
+          "ref": "arg",
+          "value": "millis",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "sleep"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "millis",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "asleep",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "millis",
+          "ref": "arg",
+          "value": "millis",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "asleep"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "millis",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "print",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "any[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "print"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "printf",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "format",
+          "ref": "arg",
+          "value": "format",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "any[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "printf"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "format",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "tprint",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "any[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "tprint"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "tprintf",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "format",
+          "ref": "arg",
+          "value": "format",
+          "type": "string"
+        },
+        {
+          "id": "values",
+          "ref": "arg",
+          "value": "values",
+          "type": "any[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "tprintf"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "format",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "values",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "clearLog",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "clearLog"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "disableLog",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "fn",
+          "ref": "arg",
+          "value": "fn",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "disableLog"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "fn",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "enableLog",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "fn",
+          "ref": "arg",
+          "value": "fn",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "enableLog"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "fn",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "isLogEnabled",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "fn",
+          "ref": "arg",
+          "value": "fn",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "isLogEnabled"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "fn",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getScriptLogs",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "fn",
+          "ref": "arg",
+          "value": "fn",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "any[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getScriptLogs"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "fn",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "tail",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "fn",
+          "ref": "arg",
+          "value": "fn",
+          "type": "FilenameOrPID"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "any[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "tail"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "fn",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "scan",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "scan"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "nuke",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "nuke"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "brutessh",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "brutessh"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "ftpcrack",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "ftpcrack"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "relaysmtp",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "relaysmtp"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "httpworm",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "httpworm"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "sqlinject",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "sqlinject"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "string"
+        },
+        {
+          "id": "numThreads",
+          "ref": "arg",
+          "value": "numThreads",
+          "type": "number"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "Array<string | number | boolean>"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "run"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "numThreads",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "exec",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "numThreads",
+          "ref": "arg",
+          "value": "numThreads",
+          "type": "number"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "Array<string | number | boolean>"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "exec"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "numThreads",
+          "to": "args",
+          "as": "arg2"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg3"
+        }
+      ]
+    },
+    {
+      "id": "spawn",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "string"
+        },
+        {
+          "id": "numThreads",
+          "ref": "arg",
+          "value": "numThreads",
+          "type": "number"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "string[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "spawn"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "numThreads",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "kill",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "kill"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "kill",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "string[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "kill"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "killall",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "killall"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "exit",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "exit"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "scp",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "files",
+          "ref": "arg",
+          "value": "files",
+          "type": "string | string[]"
+        },
+        {
+          "id": "destination",
+          "ref": "arg",
+          "value": "destination",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "scp"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "files",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "destination",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "scp",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "files",
+          "ref": "arg",
+          "value": "files",
+          "type": "string | string[]"
+        },
+        {
+          "id": "source",
+          "ref": "arg",
+          "value": "source",
+          "type": "string"
+        },
+        {
+          "id": "destination",
+          "ref": "arg",
+          "value": "destination",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "scp"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "files",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "source",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "destination",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "ls",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "grep",
+          "ref": "arg",
+          "value": "grep",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "ls"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "grep",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "ps",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "ps"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "hasRootAccess",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "hasRootAccess"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getHostname",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getHostname"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getHackingLevel",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getHackingLevel"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getHackingMultipliers",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getHackingMultipliers"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getHacknetMultipliers",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getHacknetMultipliers"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getServer",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServer"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerMoneyAvailable",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerMoneyAvailable"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerMaxMoney",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerMaxMoney"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerGrowth",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerGrowth"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerSecurityLevel",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerSecurityLevel"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerMinSecurityLevel",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerMinSecurityLevel"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerBaseSecurityLevel",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerBaseSecurityLevel"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerRam",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerRam"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerMaxRam",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerMaxRam"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerUsedRam",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerUsedRam"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerRequiredHackingLevel",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerRequiredHackingLevel"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getServerNumPortsRequired",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getServerNumPortsRequired"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "serverExists",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "serverExists"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "fileExists",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "filename",
+          "ref": "arg",
+          "value": "filename",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "fileExists"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "filename",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "isRunning",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "FilenameOrPID"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "string[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "isRunning"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "getRunningScript",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "filename",
+          "ref": "arg",
+          "value": "filename",
+          "type": "FilenameOrPID"
+        },
+        {
+          "id": "hostname",
+          "ref": "arg",
+          "value": "hostname",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "(string | number)[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getRunningScript"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "filename",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "hostname",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "getPurchasedServerCost",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "ram",
+          "ref": "arg",
+          "value": "ram",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getPurchasedServerCost"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "ram",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "purchaseServer",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "hostname",
+          "ref": "arg",
+          "value": "hostname",
+          "type": "string"
+        },
+        {
+          "id": "ram",
+          "ref": "arg",
+          "value": "ram",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "purchaseServer"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "hostname",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "ram",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "deleteServer",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "deleteServer"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getPurchasedServers",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getPurchasedServers"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getPurchasedServerLimit",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getPurchasedServerLimit"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getPurchasedServerMaxRam",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getPurchasedServerMaxRam"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "write",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "handle",
+          "ref": "arg",
+          "value": "handle",
+          "type": "string"
+        },
+        {
+          "id": "data",
+          "ref": "arg",
+          "value": "data",
+          "type": "string[] | number | string"
+        },
+        {
+          "id": "mode",
+          "ref": "arg",
+          "value": "mode",
+          "type": "\"w\" | \"a\""
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "write"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "handle",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "data",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "mode",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "tryWritePort",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "port",
+          "ref": "arg",
+          "value": "port",
+          "type": "number"
+        },
+        {
+          "id": "data",
+          "ref": "arg",
+          "value": "data",
+          "type": "string | number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "tryWritePort"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "port",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "data",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "read",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "handle",
+          "ref": "arg",
+          "value": "handle",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "read"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "handle",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "peek",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "port",
+          "ref": "arg",
+          "value": "port",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "peek"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "port",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "clear",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "handle",
+          "ref": "arg",
+          "value": "handle",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "clear"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "handle",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "clearPort",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "handle",
+          "ref": "arg",
+          "value": "handle",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "clearPort"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "handle",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "writePort",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "port",
+          "ref": "arg",
+          "value": "port",
+          "type": "number"
+        },
+        {
+          "id": "data",
+          "ref": "arg",
+          "value": "data",
+          "type": "string | number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "writePort"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "port",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "data",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "readPort",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "port",
+          "ref": "arg",
+          "value": "port",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "readPort"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "port",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getPortHandle",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "port",
+          "ref": "arg",
+          "value": "port",
+          "type": "number"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getPortHandle"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "port",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "rm",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "name",
+          "ref": "arg",
+          "value": "name",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "rm"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "name",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "scriptRunning",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "scriptRunning"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "scriptKill",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "scriptKill"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "getScriptName",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getScriptName"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getScriptRam",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getScriptRam"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "getHackTime",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getHackTime"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getGrowTime",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getGrowTime"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getWeakenTime",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getWeakenTime"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "getScriptIncome",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getScriptIncome"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getScriptIncome",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "string[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getScriptIncome"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "getScriptExpGain",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getScriptExpGain"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getScriptExpGain",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "script",
+          "ref": "arg",
+          "value": "script",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "string[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getScriptExpGain"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "script",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "getTimeSinceLastAug",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getTimeSinceLastAug"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "sprintf",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "format",
+          "ref": "arg",
+          "value": "format",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "any[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "sprintf"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "format",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "vsprintf",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "format",
+          "ref": "arg",
+          "value": "format",
+          "type": "string"
+        },
+        {
+          "id": "args",
+          "ref": "arg",
+          "value": "args",
+          "type": "any[]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "vsprintf"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "format",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "args",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "nFormat",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "n",
+          "ref": "arg",
+          "value": "n",
+          "type": "number"
+        },
+        {
+          "id": "format",
+          "ref": "arg",
+          "value": "format",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "nFormat"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "n",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "format",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "tFormat",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "milliseconds",
+          "ref": "arg",
+          "value": "milliseconds",
+          "type": "number"
+        },
+        {
+          "id": "milliPrecision",
+          "ref": "arg",
+          "value": "milliPrecision",
+          "type": "boolean"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "tFormat"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "milliseconds",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "milliPrecision",
+          "to": "args",
+          "as": "arg1"
+        }
+      ]
+    },
+    {
+      "id": "prompt",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "txt",
+          "ref": "arg",
+          "value": "txt",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "prompt"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "txt",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "alert",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "msg",
+          "ref": "arg",
+          "value": "msg",
+          "type": "any"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "alert"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "msg",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "toast",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "msg",
+          "ref": "arg",
+          "value": "msg",
+          "type": "any"
+        },
+        {
+          "id": "variant",
+          "ref": "arg",
+          "value": "variant",
+          "type": "string"
+        },
+        {
+          "id": "duration",
+          "ref": "arg",
+          "value": "duration",
+          "type": "number | null"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "toast"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "msg",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "variant",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "duration",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "wget",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "url",
+          "ref": "arg",
+          "value": "url",
+          "type": "string"
+        },
+        {
+          "id": "target",
+          "ref": "arg",
+          "value": "target",
+          "type": "string"
+        },
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "wget"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "url",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "target",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "getFavorToDonate",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getFavorToDonate"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getBitNodeMultipliers",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getBitNodeMultipliers"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getOwnedSourceFiles",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getOwnedSourceFiles"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getPlayer",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getPlayer"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "atExit",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "f",
+          "ref": "arg",
+          "value": "f",
+          "type": "() => void"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "atExit"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "f",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "mv",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "host",
+          "ref": "arg",
+          "value": "host",
+          "type": "string"
+        },
+        {
+          "id": "source",
+          "ref": "arg",
+          "value": "source",
+          "type": "string"
+        },
+        {
+          "id": "destination",
+          "ref": "arg",
+          "value": "destination",
+          "type": "string"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "mv"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "host",
+          "to": "args",
+          "as": "arg0"
+        },
+        {
+          "from": "source",
+          "to": "args",
+          "as": "arg1"
+        },
+        {
+          "from": "destination",
+          "to": "args",
+          "as": "arg2"
+        }
+      ]
+    },
+    {
+      "id": "flags",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "schema",
+          "ref": "arg",
+          "value": "schema",
+          "type": "[string, string | number | boolean | string[]][]"
+        },
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "flags"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        },
+        {
+          "from": "schema",
+          "to": "args",
+          "as": "arg0"
+        }
+      ]
+    },
+    {
+      "id": "share",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "share"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    },
+    {
+      "id": "getSharePower",
+      "out": "out",
+      "nodes": [
+        {
+          "id": "self",
+          "ref": "arg",
+          "value": "ns",
+          "type": "internal"
+        },
+        {
+          "id": "fn",
+          "value": "getSharePower"
+        },
+        {
+          "id": "args",
+          "ref": "array"
+        },
+        {
+          "id": "out",
+          "ref": "call"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "out",
+          "as": "self"
+        },
+        {
+          "from": "fn",
+          "to": "out",
+          "as": "fn"
+        },
+        {
+          "from": "args",
+          "to": "out",
+          "as": "args"
+        }
+      ]
+    }
+  ],
+  "edges": []
+}
